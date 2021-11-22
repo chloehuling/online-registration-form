@@ -24,10 +24,10 @@
                 <fieldset class="form_input">
                   <legend>Contact Information</legend>
                     <label class="contact_info" for="fullname">Full Name</label>
-                    <input class="contact_input" type="text" id="fullname" name="user_fullname"><br>
+                    <input class="contact_input" type="text" id="fullname" name="user_fullname" placeholder="required"><br>
                     
                     <label class="contact_info" for="mail">Email Address</label>
-                    <input class="contact_input" type="email" id="mail" name="user_email"><br>
+                    <input class="contact_input" type="email" id="mail" name="user_email" placeholder="required"><br>
                     
                     <label class="contact_info" for="telephone">Phone Number</label>
                     <input class="contact_input" type="tel" id="telephone" name="user_telephone"><br>
@@ -50,6 +50,7 @@
                     <label class="contact_info" for="zipcode">Zip Code</label>
                     <input class="contact_zip " type="number" id="zipcode" name="user_zipcode"><br>
                 </fieldset>
+                
                 <fieldset>
                     <legend>Newsletter</legend>
                     <p>Select the newsletters you would like to receive</p><br>
@@ -75,12 +76,12 @@
                         <label for="plain_text" class="light">Plain text</label><br>
                     </div>
 
-                    <p>Other topics you&#39;d like to hear about</p>
+                    <label for="textarea" class="light" id="topics">Other topics you&#39;d like to hear about</label>
                     <textarea id="topics" name="user_topics"></textarea>
-            
+                    
+                    <button type="submit">Sign Up</button>
                 </fieldset>
             </form>
-            <button type="submit">Sign Up</button>
             
         </div>
        </main>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>online registration form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <header>
+        <h1>THE CHLOE CODE REVIEW</h1>
+      </header>
+       <main>
+        <section class="top_design">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </section>
+        <div>
+            <form action="index.html" method="post" class="online_form">
+                
+                <fieldset class="form_input">
+                  <legend>Contact Information</legend>
+                    <label class="contact_info" for="fullname">Full Name</label>
+                    <input class="contact_input" type="text" id="fullname" name="user_fullname"><br>
+                    
+                    <label class="contact_info" for="mail">Email Address</label>
+                    <input class="contact_input" type="email" id="mail" name="user_email"><br>
+                    
+                    <label class="contact_info" for="telephone">Phone Number</label>
+                    <input class="contact_input" type="tel" id="telephone" name="user_telephone"><br>
+                    
+                    <label class="contact_info" for="street">Street Address</label>
+                    <input class="contact_input" type="text" id="street" name="user_address"><br>
+                    
+                    <label class="contact_info" for="city">City</label>
+                    <input class="contact_input" type="text" id="city" name="user_city"><br>
+                    
+                    <label class="contact_info" for="state">State</label>
+                    <select class="contact_input" id="state" name="user_state">
+                        <option value=" ">Choose State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California + all other states</option>
+                    </select><br>	
+                    <label class="contact_info" for="zipcode">Zip Code</label>
+                    <input class="contact_zip " type="number" id="zipcode" name="user_zipcode"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <p>Select the newsletters you would like to receive</p><br>
+                    <div>
+                        <input type="checkbox" id="html_news" value="html_news" name="newsletters">
+                        <label for="html_news" class="light">HTML News</label> <br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="css_news" value="css_news" name="newsletters">
+                        <label for="css_news" class="light">CSS News</label> <br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="javascript_news" value="javascript_news" name="newsletters">
+                        <label for="javascript_news" class="light">Javascript News</label> 
+                    </div>
+                    <p class="divider">Newsletter format</p> <br>
+                    <div>
+                        <input type="radio" id="html" value="html" name="newsletter_format">
+                        <label for="html" class="light">HTML</label> <br>
+                    </div>
+                    <div>
+                        <input type="radio" id="plain_text" value="plain_text" name="newsletter_format">
+                        <label for="plain_text" class="light">Plain text</label><br>
+                    </div>
+
+                    <p>Other topics you&#39;d like to hear about</p>
+                    <textarea id="topics" name="user_topics"></textarea>
+            
+                </fieldset>
+            </form>
+            <button type="submit">Sign Up</button>
+            
+        </div>
+       </main>
+       <footer>
+        <p><small><em>Copyright The Chloe Code Review</em></small></p>
+      </footer>
+      </body>
+
+  </html>

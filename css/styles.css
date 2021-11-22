@@ -79,7 +79,11 @@ button {
     border-radius: 5px;
     border:none;
   }
-.contact_label {
+  ::placeholder {
+    font-style: italic;
+    text-align: right;
+  }
+  .contact_label {
     width: 35%;
    
 }

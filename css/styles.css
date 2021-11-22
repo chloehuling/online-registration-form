@@ -127,32 +127,30 @@ footer {
 }
 
 
+
 @media screen and (min-width: 768px) {
-
- 
   main {
-
-    width: 50%;
-   }
-   
-  .contact_input {
-  flex-direction:row;
-  flex-wrap:wrap;
+    max-width: 600px;
   }
-  .contact_input input,
-   select {
-    width: 70%;  
-}
 
-.contact_input label {
+  .form_input {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .form_input input,
+  .form_input select {
+    width: 70%;
+  }
+
+  .form_input label {
     width: 25%;
+  }
 
-}
-
-#zipcode {
-  width: 25%;
-
-}
+  #zipcode {
+    width: 25%;
+  }
 }
 
 
